@@ -10,7 +10,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Efecto scroll deslizante a pantalla completa usando solo css</title>
-<link rel="stylesheet" href="css/animate.css">
+<!--<link rel="stylesheet" href="css/animate.css">-->
+<link rel="stylesheet" href="css/jquery.pagepiling.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Poppins" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -40,31 +41,51 @@
 			</div>
 		</div>
 	</header>
-	<div class="video-full">
-		<video src="img/alcohol-skull-glass-cinemagraph.mp4" autoplay loop></video>
-	</div>
-	<div class="container">
-		<div class="row">
-				<div class="position-fixed menu">
-						<nav>
-							<ul class="nav flex-column">
-								<li class="item-nav"><a href="#intro" class="nav-link active d-flex align-items-center ancla"><span class="circle"></span> <p class="ml-1">Intro</p></a> </li>
-								<li class="item-nav"><a href="#about-us" class="nav-link d-flex align-items-center ancla"><span class="circle"></span> <p class="ml-1">About Us</p></a></li>
-								<li class="item-nav"><a href="#slider-2" class="nav-link d-flex align-items-center ancla"><span class="circle"></span> <p class="ml-1">Slider dos</p></a></li>
-								<li class="item-nav"><a href="#slider-3" class="nav-link d-flex align-items-center ancla"><span class="circle"></span> <p class="ml-1">Slider tres</p></a></li>
-								<li class="item-nav"><a href="#slider-4" class="nav-link d-flex align-items-center ancla"><span class="circle"></span> <p class="ml-1">Slider cuatro</p></a></li>
-							</ul>
-						</nav>
-				</div>
 
-			<div class="col-12 panel text-center wow slideInUp" id="intro">
+<div id="pagepiling">
+	<div class="section" id="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1>SECTION ONE</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores aut expedita praesentium magni, aliquid ipsam vitae dignissimos accusamus ex tempore modi sed illo nam alias nesciunt rem sapiente. Pariatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="slider-1">
+			<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1>SECTION TWO</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores aut expedita praesentium magni, aliquid ipsam vitae dignissimos accusamus ex tempore modi sed illo nam alias nesciunt rem sapiente. Pariatur.</p>
+						</div>
+					</div>
+			</div>
+	</div>
+
+	<div class="section" id="slider-2">
+			<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1>SECTION THREE</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores aut expedita praesentium magni, aliquid ipsam vitae dignissimos accusamus ex tempore modi sed illo nam alias nesciunt rem sapiente. Pariatur.</p>
+						</div>
+					</div>
+			</div>
+	</div>
+</div>
+	<!--<div class="container">
+		<div class="row" id="pagepiling">
+			<div class="col-12 panel text-center section" id="intro">
 				<div class="d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
 					<img src="img/beer.png" alt="" class="w-25 mb-5">
 					<h1>THE BEER IS THE BEST FRIEND</h1>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, dolore.</p>
 				</div>	
 			</div>
-			<div class="col-12 panel " id="about-us">
+			<div class="col-12 panel section" id="about-us">
 				<div class="row align-items-center justify-content-between wow slideInUp">
 					<div class="col-12 text-center">
 							<h1>ABOUT US</h1>
@@ -81,26 +102,27 @@
 						</div>
 						
 					</div>
-					
+
 				</div>
 			</div>
-			<div class="col-12 col-md-10 panel wow slideInUp" id="slider-1">
+			<div class="col-12 col-md-10 panel section" id="slider-1">
 					<h1>SLIDER UNO</h1>
 					<h4>Lorem ipsum dolor sit.</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorum ducimus quam suscipit omnis sint distinctio iste aperiam recusandae. Reprehenderit hic voluptas ducimus, pariatur doloremque dolorem eius aut minima architecto.</p>
 					<a data-section="slider-2" class="btn btn-outline-light next">Next</a>
 			</div>
-			<div class="col-12 col-md-10 panel" id="slider-2">
+			<div class="col-12 col-md-10 panel section" id="slider-2">
 					<h1>SLIDER DOS</h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorum ducimus quam suscipit omnis sint distinctio iste aperiam recusandae. Reprehenderit hic voluptas ducimus, pariatur doloremque dolorem eius aut minima architecto.</p>
 					<a data-section="intro" class="btn btn-outline-light next">REGRESAR</a>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="js/scrollTo.js"></script>
-	<script src="js/wow.min.js"></script>
+	<!--<script src="js/scrollTo.js"></script>-->
+	<script src="js/jquery.pagepiling.min.js"></script>
+	<!--<script src="js/wow.min.js"></script>-->
 	<script src="js/main.js"></script>
 </body>
 </html>
