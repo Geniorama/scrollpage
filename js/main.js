@@ -1,15 +1,5 @@
 $(document).ready(function(){
-    /*$('.next').click(function(){
-       var seccion = $(this).attr('data-section');
-        $('.panel').removeClass('show');
-        $('.panel[id="'+seccion+'"]').addClass('show');
-
-        $('.menu .item-nav').removeClass('active');
-        $('.menu .item-nav[data-section="'+seccion+'"]').addClass('active');
-    });
-*/
-
-
+    
 //new WOW().init();
 
 $('#pagepiling').pagepiling({
@@ -20,8 +10,8 @@ $('#pagepiling').pagepiling({
     anchors: [],
     scrollingSpeed: 700,
     easing: 'swing',
-    loopBottom: false,
-    loopTop: false,
+    loopBottom: true,
+    loopTop: true,
     css3: true,
     navigation: {
         'textColor': '#ccc',

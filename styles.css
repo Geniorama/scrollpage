@@ -3,7 +3,7 @@
 .header{
 	width: 100%;
 	z-index: 10000;
-	background-color: #000;
+	background-color: rgba(0, 0, 0, .7);
 	border-bottom: 1px solid #959595;
 }
 
@@ -20,11 +20,15 @@
 }
 
 .header .nav-link:hover{
-	color: #959595;
+	opacity: .6;
 }
 
 #intro{
-	background: #ccc;
+	background-image: url('img/beer-a-pint.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #ccc;
 }
 
 #slider-1{
