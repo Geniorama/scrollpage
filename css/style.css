@@ -1,0 +1,46 @@
+.section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+.section p {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 20pt;
+}
+
+#intro {
+  background: #b75eff;
+  background: -moz-linear-gradient(left, #b75eff 0%, #47329c 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #b75eff), color-stop(100%, #47329c));
+  background: -webkit-linear-gradient(left, #b75eff 0%, #47329c 100%);
+  background: -o-linear-gradient(left, #b75eff 0%, #47329c 100%);
+  background: -ms-linear-gradient(left, #b75eff 0%, #47329c 100%);
+  background: linear-gradient(to right, #b75eff 0%, #47329c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b75eff", endColorstr="#47329c", GradientType=1 );
+}
+
+#slider-1 {
+  background: #757575;
+}
+
+#slider-2 {
+  background: #ccc;
+}
+
+.header {
+  width: 100%;
+  z-index: 10000;
+  background-color: #252525;
+}
+.header .nav-link {
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+}
+.header .nav-link:hover {
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */
